@@ -1,0 +1,68 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #171717;
+    overflow-x: hidden;
+    font-family: "Montserrat", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    color: white;
+}
+.bridge{
+	background-image: url('../images/bridge.png');
+}
+.background-image{
+    background-image: url('../images/bridgehacs.jpg');
+    background-position: 50% 50%;
+    background-size: cover;
+  	position: fixed;
+  	filter: blur(0px);
+  	-webkit-filter: blur(0px);
+  	left: 0;
+  	right: 0;
+    height: 800px;
+    width: 100%;
+}
+
+.title-container {
+    position: relative;
+    padding-top: 280px;
+    width: 100%;
+    text-align: center;
+}
+
+.title-container h1 {
+    font-size: 64px;
+    text-align: center;
+    margin: 10px 0px 10px 0px !important;
+}
+
+.title-container h1 {
+    margin: 10px;
+    line-height: 130px;
+    font-family: "Montserrat", Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    font-size: 6em;
+    padding-left: 10px;
+    padding-right: 10px;
+    letter-spacing: 3px;
+    color: tomato;
+}
+
+.title-container h2 {
+	color: white;
+	font-weight: 500;
+}
+
+div {
+    display: block;
+}
+
+
+/*
+.title-container{
+	text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 22px;
+    position: relative;
+}*/
