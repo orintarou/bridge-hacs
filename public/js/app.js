@@ -10,7 +10,7 @@ app.controller("BridgeController", function ($scope) {
 	$scope.todoAdd = function(name, email) {
 		if(validateEmail(email)){
 			databaseLink.push({name:name, email:email});
-			{window.location.reload();}
+			{window.location.href = '/thanks.html'}
 		}else{
 			alert("Not a valid email? If it is...email us!");
 		};
