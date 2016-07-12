@@ -75,7 +75,7 @@ body {
     padding-left: 10px;
     padding-right: 10px;
     /*this took a long time to finalize*/
-    color:#F2B51F;
+    color:tomato;
 }
 
 .title-container h3 {
@@ -96,7 +96,7 @@ body {
 
 #about h2 {
     text-align: center;
-    color: #F2B51F;
+    color: tomato;
 }
 
 #about p {
@@ -121,7 +121,7 @@ body {
 
 .softwarehardware{
     display: block;
-    background-image: url('../images/softwarehardware.png');
+    background-image: url('../images/softwarehardware2.png');
     background-position: 50% 50%;
     margin-left: auto;
     margin-right: auto;
@@ -134,7 +134,7 @@ body {
 /*SLIDE 3 - Participate*/
 
 #participate {
-    background-color: #F2B51F;
+    background-color: black;
     height: 400px;
     text-align: center;
     background-position: 50% 50%;
@@ -148,7 +148,7 @@ body {
   font-size: 20px;
   padding-top: 10px;
   width: 90%;
-  background-color: rgba(256, 256, 256, .8);
+  background-color: rgba(256, 256, 256, .5);
   color: #FF9100;
   color: black;
 }
