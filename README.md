@@ -1,2 +1,2 @@
 # BridgehaCS
-BridgehaCS website. Built on Openshift using Angular
+[BridghaCS website](http://bridgehacs.org "Title").. Built on Openshift using Angular
