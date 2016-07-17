@@ -155,7 +155,12 @@ input {
     height: 40px;
     text-decoration: none;
     outline: none;
-
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
 }
 
 .RSVP:hover {
