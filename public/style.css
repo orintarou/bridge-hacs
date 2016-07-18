@@ -135,10 +135,17 @@ input {
 }
 
 #front-page h3 {
-    padding-top: 250px;
     font-size: .8em;
     font-weight: 200;
     text-align: center;
+    webkit-animation-delay: 2s; /* Chrome, Safari, Opera */
+    animation-delay: 2s;
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
 }
 
 .RSVP{
@@ -209,6 +216,26 @@ input {
     opacity: .9;
 }
 
+.sponsor {
+     width: 20em; 
+    max-width: 80%;
+    -webkit-filter: brightness(0) invert(1);
+    filter: brightness(0) invert(1);
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.sponsor:hover {
+  -webkit-filter: brightness(0) invert(-1);
+  filter: brightness(0) invert(-1);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  border-radius: 10px;
+  padding: 10px;
+}
+
 .softwarehardware{
     display: block;
     background-image: url('../images/softwarehardware2.png');
@@ -263,8 +290,3 @@ input {
     -o-transition: all 0.4s ease;
     transition: all 0.4s ease;
 }
-
-
-
-
-
