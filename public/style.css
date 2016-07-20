@@ -190,6 +190,7 @@ input {
   text-align: center;
   margin-left: 10%;
   margin-right: 10%;
+  margin-top: 20%;
     
 }
 
@@ -215,21 +216,24 @@ input {
 }
 
 .sponsors {
-  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  width: 70%;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
   margin-bottom: 5%;
   border-radius: 10px;
   padding: 10px;
-  margin-left: 17%;
-  margin-right: 10%;
-  max-width: 800px;
 }
 
 .sponsor1 {
+  text-decoration: none;
   -webkit-filter: brightness(0) invert(1);
   filter: brightness(0) invert(1);
   -webkit-transition: 0.3s;
   transition: 0.3s;
-  padding-left: 0px;
+  margin-top: 5%;
 }
 
 .sponsor1:hover {
@@ -240,12 +244,13 @@ input {
 }
 
 .sponsor2 {
-  padding-top: 20px;
+  text-decoration: none;
+  margin-top: 5%;
+  margin: 2%;
   -webkit-filter: brightness(0) invert(1);
   filter: brightness(0) invert(1);
   -webkit-transition: 0.3s;
   transition: 0.3s;
-  padding-left: 50px;
 }
 
 .sponsor2:hover {
