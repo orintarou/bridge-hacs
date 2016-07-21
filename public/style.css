@@ -222,8 +222,13 @@ input {
   margin: 0 auto;
   left: 0;
   right: 0;
-  margin-bottom: 5%;
-  border-radius: 10px;
+}
+
+.sponsors img{
+  padding-top: 5%;
+  margin-bottom: 5%
+  margin-top: 5%;
+  margin: 2%;
   padding: 10px;
 }
 
@@ -233,8 +238,7 @@ input {
   filter: brightness(0) invert(1);
   -webkit-transition: 0.3s;
   transition: 0.3s;
-  margin-top: 5%;
-  padding: 5%;
+
 }
 
 .sponsor1:hover {
@@ -246,13 +250,10 @@ input {
 
 .sponsor2 {
   text-decoration: none;
-  margin-top: 5%;
-  margin: 2%;
   -webkit-filter: brightness(0) invert(1);
   filter: brightness(0) invert(1);
   -webkit-transition: 0.3s;
   transition: 0.3s;
-  padding: 5%;
 }
 
 .sponsor2:hover {
