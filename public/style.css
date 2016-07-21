@@ -234,6 +234,7 @@ input {
   -webkit-transition: 0.3s;
   transition: 0.3s;
   margin-top: 5%;
+  padding: 5%;
 }
 
 .sponsor1:hover {
@@ -251,6 +252,7 @@ input {
   filter: brightness(0) invert(1);
   -webkit-transition: 0.3s;
   transition: 0.3s;
+  padding: 5%;
 }
 
 .sponsor2:hover {
