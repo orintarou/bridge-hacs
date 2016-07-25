@@ -15,7 +15,7 @@
         </div>
       <div id="questions">
         <form class="questions-form" ng-submit="addUser(firstName, lastName, email, birthday, location, college, gradYear,
-         major, nonGrad, progExp)" novalidate>
+         major, nonGrad, progExp, fact)" novalidate>
           <div class="form-group">
             <label>First Name*</label>
             <input class="text-box" type="text" ng-model="firstName" required>
@@ -64,6 +64,10 @@
             <div class="form-group">
               <label>Tell us a little about your programming experience!  Have you never written a line of code before, or have you been programming for multiple years? Remember, we're looking to bring in people from both sides of the spectrum, so don't hesitate to be honest!*</label>
               <textarea class="text-area" ng-model="progExp" required></textarea>
+            </div>
+            <div class="form-group">
+              <label>Tell us something interesting about you!*</label>
+              <textarea class="text-area" ng-model="fact" placeholder="I'm Kumaran and I play competitive super smash bros melee"></textarea>
             </div>
             <input class="submit" type="submit" value="Submit">
         </form>
