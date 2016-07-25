@@ -35,10 +35,11 @@ app.controller("BridgeController", function ($scope) {
 	 			progExp:progExp});
 	 		{window.location.href = '/thanks.html'}
 	 	}else{
-	 		alert("Not a valid email? If it is...email us!");
-	 	};
-
-	};
+	 		if(validateEmail(email) == false){
+	 			alert("Please make sure you answered all the required questions!");
+	 		}
+	 	}
+	 };
 
 	$scope.changeForm = function() {
 		alert("yoo");
