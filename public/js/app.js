@@ -1,4 +1,4 @@
-var app = angular.module("BridgeApp", [])
+var app = angular.module("BridgeApp", ['.smoothScroll'])
 var databaseLink = new Firebase('https://bridgehacs.firebaseio.com/');  
 
 function validateEmail(email) {
@@ -10,10 +10,6 @@ app.controller("BridgeController", function ($scope) {
 	$scope.RSVP = function(){
 		{window.location.href = '/RSVP.html'}
 	};
-
-	$scope.hide = function(){
-		$scope.display = !$scope.display;
-	}
 
 	$scope.todoAdd = function(name, email) {
 		if(validateEmail(email)){
