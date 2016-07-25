@@ -14,9 +14,8 @@
           </div>
         </div>
       <div id="questions">
-        <form class="questions-form" ng-submit="addUser(firstName, lastName, email, birthday,
-   college, gradYear, major, 
-   nonGrad, progExp)" novalidate>
+        <form class="questions-form" ng-submit="addUser(firstName, lastName, email, birthday, location, college, gradYear,
+         major, nonGrad, progExp)" novalidate>
           <div class="form-group">
             <label>First Name*</label>
             <input class="text-box" type="text" ng-model="firstName" required>
@@ -32,6 +31,10 @@
           <div class="form-group">
             <label>What's your birthday?* (ex. 11/13/1996) </label>
             <input class="text-box" type="text" placeholder="mm/dd/yyyy" ng-model="birthday" required>
+          </div>
+          <div class="form-group">
+            <label>Where are you located this summer?* (ex. Cambridge, Massachusetts) </label>
+            <input class="text-box" type="text" placeholder="Norwell, Massachusetts" ng-model="location" required>
           </div>
           <div class="form-group">
             <label>Are you currently enrolled in a college/univeristy?*</label>

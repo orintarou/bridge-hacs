@@ -25,12 +25,12 @@ app.controller("BridgeController", function ($scope) {
 		{window.location.href = '/rsvp.html'}
 	};
 
-	$scope.addUser = function(firstName, lastName, email, birthday,
+	$scope.addUser = function(firstName, lastName, email, birthday, location,
 	 college="", gradYear="", major="", 
 	 nonGrad="", progExp){
 	 	if(validateEmail(email)){
 	 		databaseLink.push({firstName:firstName, lastName:lastName,
-	 			email:email, birthday:birthday, college:college,
+	 			email:email, birthday:birthday, location:location, college:college,
 	 			gradYear:gradYear, major:major, nonGrad:nonGrad, 
 	 			progExp:progExp});
 	 		{window.location.href = '/thanks.html'}
