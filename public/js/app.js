@@ -32,7 +32,7 @@ app.controller("BridgeController", function ($scope) {
 	 		databaseLink.push({firstName:firstName, lastName:lastName,
 	 			email:email, birthday:birthday, college:college,
 	 			gradYear:gradYear, major:major, nonGrad:nonGrad, 
-	 			progExp:progExp, resume:resume});
+	 			progExp:progExp});
 	 		{window.location.href = '/thanks.html'}
 	 	}else{
 	 		alert("Make sure you entered all the information in the correct format!");
