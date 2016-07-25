@@ -4,10 +4,9 @@
       <link rel="stylesheet" type="text/css" href="rsvp.css">
       <script src="https://cdn.firebase.com/js/client/2.2.1/firebase.js"></script>
       <script src="js/angular.min.js"></script>
-      <script src="js/angular-scroll.js"></script>
       <script src="js/app.js"></script>
    </head>
-   <body>
+   <body ng-app="BridgeApp" ng-controller="BridgeController">
       <div id="header">
          <img class="logo" src="../images/logo.png">
          <div class="header-body" ng-controller="BridgeController">
@@ -17,36 +16,60 @@
       <div id="questions">
         <form class="questions-form">
           <div class="form-group">
-            <label for="exampleInputEmail1">1. First Name</label>
+            <label>First Name</label>
             <input class="text-box" type="text">
           </div>
           <div class="form-group">
-            <label for="exampleInputEmail1">2. Last Name</label>
+            <label>Last Name</label>
             <input class="text-box" type="text">
           </div>
           <div class="form-group">
-            <label for="exampleInputEmail1">2. Email</label>
+            <label>Email</label>
             <input class="text-box" type="text">
           </div>
           <div class="form-group">
-            <label for="exampleInputEmail1">4. Are you currently enrolled in a college/univeristy?</label>
-            <input type="radio" name="college">Yes
-            <input type="radio" name="college">No
+            <label>What's your birthday?</label>
+            <input class="text-box" type="text" placeholder="mm/dd/yyyy">
           </div>
           <div class="form-group">
-            <label for="exampleInputEmail1">5. If yes, what college, and what year are you entering this fall? (N/A if No)</label>
-            <input class="text-box" type="text" placeholder="University of Illinois at Urbana Champaign - Junior">
+            <label>Are you currently enrolled in a college/univeristy?</label>
+            <input type="radio" name="college" onChange="wasup('yes')">Yes
+            <input type="radio" name="college" onChange="wasup('no')">No
           </div>
-          <div class="form-group">
-            <label for="exampleInputEmail1">1. Email</label>
-            <input class="text-box" type="text">
+          <div style="display:none" id="yesQuestions">
+            <div class="form-group">
+              <label>What school do you attend?</label>
+              <input class="text-box" type="text">
+            </div>
+            <div class="form-group">
+              <label>What year are you projected to graduate?</label>
+              <input class="text-box" type="text">
+            </div>
+            <div class="form-group">
+              <label>What's your major (intended or declared)?</label>
+              <input class="text-box" type="text">
+            </div>
           </div>
+          <div style="display:none" id="noQuestions">
+            <div class="form-group">
+              <label>That's fine! Just explain to us what your situation is below (Graduated college already? Still in high school? Elementary school student trying to get a head start at life?)</label>
+              <input class="text-box" type="text">
+            </div>
+          </div>
+            <div class="form-group">
+              <label>Tell us a little about your programming experience!  Have you never written a line of code before, or have you been programming for multiple years? Remember, we're looking to bring in people from both sides of the spectrum, so don't hesitate to be honest!</label>
+              <textarea class="text-area"></textarea>
+            </div>
+            <div class="form-group">
+              <label>Have a Resume? Attach it below!</label>
+              <input type="file">
+            </div>
         </form>
       </div>
    </body>
    <!-- <header>
       <div class="header-group">
-        <label for="exampleInputEmail1">Email address</label>
+        <label>Email address</label>
         <input type="email" class="header-control" id="exampleInputEmail1" placeholder="Enter email" ng-model="vm.user.email">
       </div>
       </header> -->

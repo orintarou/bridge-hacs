@@ -94,3 +94,18 @@ label{
   padding: 3px;
   margin: 2px;
 }
+
+#questions .questions-form .form-group .text-area{
+  border-style: dashed;
+  border-color: tomato;
+  border-radius: 6px;
+  color: black;
+  background: 0 0;
+  outline: 0;
+  font-family: "Source Sans Pro",sans-serif;
+  width: 400px;
+  height: 200px;
+  font-size: 20px;
+  padding: 3px;
+  margin: 2px;
+}
