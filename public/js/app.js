@@ -27,7 +27,7 @@ app.controller("BridgeController", function ($scope) {
 
 	$scope.addUser = function(firstName, lastName, email, birthday,
 	 college="", gradYear="", major="", 
-	 nonGrad="", progExp, resume=""){
+	 nonGrad="", progExp){
 	 	if(validateEmail(email) && validateBirthday(birthday)){
 	 		databaseLink.push({firstName:firstName, lastName:lastName,
 	 			email:email, birthday:birthday, college:college,
@@ -35,7 +35,7 @@ app.controller("BridgeController", function ($scope) {
 	 			progExp:progExp, resume:resume});
 	 		{window.location.href = '/thanks.html'}
 	 	}else{
-	 		alert("Make sure you entered your email and birthday in the proper format!");
+	 		alert("Make sure you entered all the information in the correct format!");
 	 	};
 
 	};
