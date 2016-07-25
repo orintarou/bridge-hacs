@@ -14,55 +14,57 @@
           </div>
         </div>
       <div id="questions">
-        <form class="questions-form">
+        <form class="questions-form" ng-submit="addUser(firstName, lastName, email, birthday,
+   college, gradYear, major, 
+   nonGrad, progExp, resume)" novalidate>
           <div class="form-group">
-            <label>First Name</label>
-            <input class="text-box" type="text" required>
+            <label>First Name*</label>
+            <input class="text-box" type="text" ng-model="firstName" required>
           </div>
           <div class="form-group">
-            <label>Last Name</label>
-            <input class="text-box" type="text" required>
+            <label>Last Name*</label>
+            <input class="text-box" type="text" ng-model="lastName" required>
           </div>
           <div class="form-group">
-            <label>Email</label>
-            <input class="text-box" type="text" required>
+            <label>Email*</label>
+            <input class="text-box" type="text" ng-model="email" required>
           </div>
           <div class="form-group">
-            <label>What's your birthday?</label>
-            <input class="text-box" type="text" placeholder="mm/dd/yyyy" required>
+            <label>What's your birthday?*</label>
+            <input class="text-box" type="text" placeholder="mm/dd/yyyy" ng-model="birthday" required>
           </div>
           <div class="form-group">
-            <label>Are you currently enrolled in a college/univeristy?</label>
-            <input type="radio" name="college" onChange="wasup('yes')" required>Yes
-            <input type="radio" name="college" onChange="wasup('no')" required>No
+            <label>Are you currently enrolled in a college/univeristy?*</label>
+            <input type="radio" name="college" onChange="show('yes')" required>Yes
+            <input type="radio" name="college" onChange="show('no')" required>No
           </div>
           <div style="display:none" id="yesQuestions">
             <div class="form-group">
-              <label>What school do you attend?</label>
-              <input class="text-box" type="text" required>
+              <label>What school do you attend?*</label>
+              <input class="text-box" type="text" ng-model="college" required>
             </div>
             <div class="form-group">
-              <label>What year are you expected to graduate?</label>
-              <input class="text-box" type="text" required>
+              <label>What year are you expected to graduate?*</label>
+              <input class="text-box" type="text" ng-model="gradYear" required>
             </div>
             <div class="form-group">
-              <label>What's your major (intended or declared)?</label>
-              <input class="text-box" type="text" required>
+              <label>What's your major (intended or declared)?*</label>
+              <input class="text-box" type="text" ng-model="major" required>
             </div>
           </div>
           <div style="display:none" id="noQuestions">
             <div class="form-group">
-              <label>That's fine! Just explain to us what your situation is below (Graduated college already? Still in high school? Elementary school student trying to get a head start at life?)</label>
-              <input class="text-box" type="text" required>
+              <label>That's fine! Just explain to us what your situation is below (Graduated college already? Still in high school? Elementary school student trying to get a head start at life?)*</label>
+              <input class="text-box" type="text" ng-model="nonGrad" required>
             </div>
           </div>
             <div class="form-group">
-              <label>Tell us a little about your programming experience!  Have you never written a line of code before, or have you been programming for multiple years? Remember, we're looking to bring in people from both sides of the spectrum, so don't hesitate to be honest!</label>
-              <textarea class="text-area" required></textarea>
+              <label>Tell us a little about your programming experience!  Have you never written a line of code before, or have you been programming for multiple years? Remember, we're looking to bring in people from both sides of the spectrum, so don't hesitate to be honest!*</label>
+              <textarea class="text-area" ng-model="progExp" required></textarea>
             </div>
             <div class="form-group">
               <label>Have a Resume? Attach it below!</label>
-              <input type="file">
+              <input type="file" ng-model="resume">
             </div>
             <input class="submit" type="submit" value="Submit">
         </form>

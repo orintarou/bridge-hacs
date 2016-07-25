@@ -109,3 +109,30 @@ label{
   padding: 3px;
   margin: 2px;
 }
+
+#questions .questions-form .submit {
+  display: block;
+  color: #ffffff;
+  border: none;
+  background: tomato;
+  border: .3px solid black;
+  border-radius: 4px;
+  margin: 0 auto;
+  margin-top: 10%;
+  cursor: pointer;
+  font-size: 1.0em;
+  width: 120px;
+  height: 40px;
+  text-decoration: none;
+  outline: none;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+}
+
+#questions .questions-form .submit:hover{
+  background:salmon;
+}

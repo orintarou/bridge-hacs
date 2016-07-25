@@ -6,7 +6,12 @@ function validateEmail(email) {
   return re.test(email);
 }
 
-function wasup(answer){
+function validateBirthday(birthday){
+	var re = /^([0-9]{2})\/([0-9]{2})\/([0-9]{4})$/;
+	return re.test(birthday);
+}
+
+function show(answer){
 	document.getElementById(answer + 'Questions').style.display = "block";
 	if (answer == "yes") {
 		document.getElementById('noQuestions').style.display = "none";
@@ -18,6 +23,21 @@ function wasup(answer){
 app.controller("BridgeController", function ($scope) {
 	$scope.RSVP = function(){
 		{window.location.href = '/RSVP.html'}
+	};
+
+	$scope.addUser = function(firstName, lastName, email, birthday,
+	 college="", gradYear="", major="", 
+	 nonGrad="", progExp, resume=""){
+	 	if(validateEmail(email) && validateBirthday(birthday)){
+	 		databaseLink.push({firstName:firstName, lastName:lastName,
+	 			email:email, birthday:birthday, college:college,
+	 			gradYear:gradYear, major:major, nonGrad:nonGrad, 
+	 			progExp:progExp, resume:resume});
+	 		{window.location.href = '/thanks.html'}
+	 	}else{
+	 		alert("Make sure you entered your email and birthday in the proper format!");
+	 	};
+
 	};
 
 	$scope.changeForm = function() {
