@@ -35,7 +35,7 @@ app.controller("BridgeController", function ($scope) {
 	 			progExp:progExp});
 	 		{window.location.href = '/thanks.html'}
 	 	}else{
-	 		alert("Make sure you entered all the information in the correct format!");
+	 		alert("Not a valid email? If it is...email us!");
 	 	};
 
 	};
