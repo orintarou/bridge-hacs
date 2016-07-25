@@ -7,6 +7,14 @@ function validateEmail(email) {
 }
 
 app.controller("BridgeController", function ($scope) {
+	$scope.RSVP = function(){
+		{window.location.href = '/RSVP.html'}
+	};
+
+	$scope.hide = function(){
+		$scope.display = !$scope.display;
+	}
+
 	$scope.todoAdd = function(name, email) {
 		if(validateEmail(email)){
 			databaseLink.push({name:name, email:email});
