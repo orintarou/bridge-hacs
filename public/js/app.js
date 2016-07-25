@@ -6,10 +6,10 @@ function validateEmail(email) {
   return re.test(email);
 }
 
-function validateBirthday(birthday){
-	var re = /^([0-9]{2})\/([0-9]{2})\/([0-9]{4})$/;
-	return re.test(birthday);
-}
+// function validateBirthday(birthday){
+// 	var re = /^([0-9]{2})\/([0-9]{2})\/([0-9]{4})$/;
+// 	return re.test(birthday);
+// }
 
 function show(answer){
 	document.getElementById(answer + 'Questions').style.display = "block";
@@ -28,7 +28,7 @@ app.controller("BridgeController", function ($scope) {
 	$scope.addUser = function(firstName, lastName, email, birthday,
 	 college="", gradYear="", major="", 
 	 nonGrad="", progExp){
-	 	if(validateEmail(email) && validateBirthday(birthday)){
+	 	if(validateEmail(email)){
 	 		databaseLink.push({firstName:firstName, lastName:lastName,
 	 			email:email, birthday:birthday, college:college,
 	 			gradYear:gradYear, major:major, nonGrad:nonGrad, 
