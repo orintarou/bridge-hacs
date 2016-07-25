@@ -1,33 +1,54 @@
 <!DOCTYPE HTML>
 <html>
-
-<head>
-  <link rel="stylesheet" type="text/css" href="rsvp.css">
-  <script src="https://cdn.firebase.com/js/client/2.2.1/firebase.js"></script>
-  <script src=js/angular.min.js></script>
-  <script src=js/angular-smooth-scroll.js></script>
-  <script src=js/app.js></script>
-</head>
-<body>
-
-
-<div id="form">
-  <img class="logo" src="../images/logo.png">
-  <div class="form-body" ng-controller="BridgeController">
-    <button class="rsvp">start</button>
-    <div id="questions">
-    <p>Question1</p>
-    </div>
-  </div>
-
-</div>
-</body>
-
-<!-- <form>
-  <div class="form-group">
-    <label for="exampleInputEmail1">Email address</label>
-    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email" ng-model="vm.user.email">
-  </div>
-</form> -->
+   <head>
+      <link rel="stylesheet" type="text/css" href="rsvp.css">
+      <script src="https://cdn.firebase.com/js/client/2.2.1/firebase.js"></script>
+      <script src="js/angular.min.js"></script>
+      <script src="js/angular-scroll.js"></script>
+      <script src="js/app.js"></script>
+   </head>
+   <body>
+      <div id="header">
+         <img class="logo" src="../images/logo.png">
+         <div class="header-body" ng-controller="BridgeController">
+            <a class="rsvp" href="#questions" du-smooth-scroll du-scrollspy>start</a>
+          </div>
+        </div>
+      <div id="questions">
+        <form class="questions-form">
+          <div class="form-group">
+            <label for="exampleInputEmail1">1. First Name</label>
+            <input class="text-box" type="text">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputEmail1">2. Last Name</label>
+            <input class="text-box" type="text">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputEmail1">2. Email</label>
+            <input class="text-box" type="text">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputEmail1">4. Are you currently enrolled in a college/univeristy?</label>
+            <input type="radio" name="college">Yes
+            <input type="radio" name="college">No
+          </div>
+          <div class="form-group">
+            <label for="exampleInputEmail1">5. If yes, what college, and what year are you entering this fall? (N/A if No)</label>
+            <input class="text-box" type="text" placeholder="University of Illinois at Urbana Champaign - Junior">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputEmail1">1. Email</label>
+            <input class="text-box" type="text">
+          </div>
+        </form>
+      </div>
+   </body>
+   <!-- <header>
+      <div class="header-group">
+        <label for="exampleInputEmail1">Email address</label>
+        <input type="email" class="header-control" id="exampleInputEmail1" placeholder="Enter email" ng-model="vm.user.email">
+      </div>
+      </header> -->
 </html>
 

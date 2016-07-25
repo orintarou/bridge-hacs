@@ -19,24 +19,28 @@
 }
 
 body{
-	text-align: center;
+  font-family: "Source Sans Pro",sans-serif;
+  color: #3d3d3d;
+  margin: 20%;
 }
 
 
-#form{
-	margin-top: 15%;
+
+#header{
+  margin-top: 15%;
+  text-align: center;
 
 }
 
-#form .logo{
+#header .logo{
 	display: inline-block;
 }
 
-#form .form-body{
+#header .header-body{
 	margin-top: 5%;
 }
 
-#form .rsvp{
+#header .rsvp{
 	display: block;
     color: #ffffff;
     border: none;
@@ -58,6 +62,35 @@ body{
     animation-name: fadeIn;
 }
 
-#form .rsvp:hover{
+#header .rsvp:hover{
 	background:salmon;
+}
+
+#questions .questions-form{
+  margin-top: 15%;
+}
+
+#questions .questions-form .form-group{
+  margin-top: 15%;
+}
+
+label{
+  display: block;
+  margin-bottom: 15px;
+}
+
+#questions .questions-form .form-group .text-box{
+  border-color: transparent;
+  border-bottom: dotted;
+  border-bottom-color: tomato;
+  border-radius: 6px;
+  color: black;
+  resize: none;
+  background: 0 0;
+  outline: 0;
+  font-family: "Source Sans Pro",sans-serif;
+  width: 75%;
+  font-size: 20px;
+  padding: 3px;
+  margin: 2px;
 }
