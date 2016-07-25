@@ -22,7 +22,7 @@ function show(answer){
 
 app.controller("BridgeController", function ($scope) {
 	$scope.RSVP = function(){
-		{window.location.href = '/RSVP.html'}
+		{window.location.href = '/rsvp.html'}
 	};
 
 	$scope.addUser = function(firstName, lastName, email, birthday,
