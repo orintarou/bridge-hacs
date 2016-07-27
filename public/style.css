@@ -157,9 +157,9 @@ input {
     display: inline-block;
     margin: 0 auto;
     cursor: pointer;
-    font-size: 1.8em;
-    width: 250px;
-    height: 40px;
+    font-size: 1.3em;
+    width: 200px;
+    height: 30px;
     text-decoration: none;
     outline: none;
     webkit-animation-delay: 1s; /* Chrome, Safari, Opera */
