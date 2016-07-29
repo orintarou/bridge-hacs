@@ -6,6 +6,16 @@
       <script src="js/angular.min.js"></script>
       <script src="js/app.js"></script>
    </head>
+      <script>
+        function show(answer){
+          document.getElementById(answer + 'Questions').style.display = "block";
+          if (answer == "yes") {
+            document.getElementById('noQuestions').style.display = "none";
+          } else if (answer == "no") {
+            document.getElementById('yesQuestions').style.display = "none";
+          }
+        }
+      </script>
    <body ng-app="BridgeApp" ng-controller="BridgeController">
       <div id="header">
          <img class="logo" src="../images/logo.png">
