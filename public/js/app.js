@@ -15,23 +15,39 @@ function show(answer){
 	}
 }
 
-app.controller("BridgeController", function ($scope) {
-  
-	$scope.addUser = function(firstName, lastName, email, birthday, location,
+function addUser(firstName, lastName, email, birthday, location,
 	 college="", gradYear="", major="",
 	 nonGrad="", progExp, fact=""){
-	 	if(validateEmail(email)){
-	 		databaseLink.push({firstName:firstName, lastName:lastName,
-	 			email:email, birthday:birthday, location:location, college:college,
-	 			gradYear:gradYear, major:major, nonGrad:nonGrad,
-	 			progExp:progExp, fact:fact});
-	 		{window.location.href = '/thanks.html'}
-	 	}else{
-	 		if(validateEmail(email) == false){
-	 			alert("Please make sure you answered all the required questions!");
-	 		}
-	 	}
-	 };
+	if(validateEmail(email)){
+		databaseLink.push({firstName:firstName, lastName:lastName,
+			email:email, birthday:birthday, location:location, college:college,
+			gradYear:gradYear, major:major, nonGrad:nonGrad,
+			progExp:progExp, fact:fact});
+		{window.location.href = '/thanks.html'}
+	}else{
+		if(validateEmail(email) == false){
+			alert("Please make sure you answered all the required questions!");
+		}
+	}
+}
+
+app.controller("BridgeController", function ($scope) {
+  
+	// $scope.addUser = function(firstName, lastName, email, birthday, location,
+	//  college="", gradYear="", major="",
+	//  nonGrad="", progExp, fact=""){
+	//  	if(validateEmail(email)){
+	//  		databaseLink.push({firstName:firstName, lastName:lastName,
+	//  			email:email, birthday:birthday, location:location, college:college,
+	//  			gradYear:gradYear, major:major, nonGrad:nonGrad,
+	//  			progExp:progExp, fact:fact});
+	//  		{window.location.href = '/thanks.html'}
+	//  	}else{
+	//  		if(validateEmail(email) == false){
+	//  			alert("Please make sure you answered all the required questions!");
+	//  		}
+	//  	}
+	//  };
 
 	$scope.todoAdd = function(name, email) {
 		if(validateEmail(email)){
