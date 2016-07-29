@@ -22,10 +22,12 @@ app.controller("BridgeController", function ($scope) {
 	$scope.addUser = function(firstName, lastName, email, birthday, location,
 	 college, gradYear, major,
 	 nonGrad, progExp, fact){
-	 	if(!college || !gradYear || !major || !nonGrad){
+	 	if(!college || !gradYear || !major){
 	 		college = "";
 	 		gradYear = "";
 	 		major = "";
+	 	}
+	 	if(!nonGrad){
 	 		nonGrad = "";
 	 	}
 	 	if(validateEmail(email)){
