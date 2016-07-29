@@ -14,27 +14,27 @@
           </div>
         </div>
       <div id="questions">
-        <form class="questions-form" onsubmit="addUser(firstName, lastName, email, birthday, location, college, gradYear,
+        <form class="questions-form" ng-submit="addUser(firstName, lastName, email, birthday, location, college, gradYear,
          major, nonGrad, progExp, fact)" novalidate>
           <div class="form-group">
             <label>First Name*</label>
-            <input class="text-box" type="text" name="firstName" required>
+            <input class="text-box" type="text" ng-model="firstName" required>
           </div>
           <div class="form-group">
             <label>Last Name*</label>
-            <input class="text-box" type="text" name="lastName" required>
+            <input class="text-box" type="text" ng-model="lastName" required>
           </div>
           <div class="form-group">
             <label>Email*</label>
-            <input class="text-box" type="text" name="email" required>
+            <input class="text-box" type="text" ng-model="email" required>
           </div>
           <div class="form-group">
             <label>What's your birthday?* (ex. 11/13/1996) </label>
-            <input class="text-box" type="text" placeholder="mm/dd/yyyy" name="birthday" required>
+            <input class="text-box" type="text" placeholder="mm/dd/yyyy" ng-model="birthday" required>
           </div>
           <div class="form-group">
             <label>Where are you located this summer?* (ex. Cambridge, Massachusetts) </label>
-            <input class="text-box" type="text" placeholder="Norwell, Massachusetts" name="location" required>
+            <input class="text-box" type="text" placeholder="Norwell, Massachusetts" ng-model="location" required>
           </div>
           <div class="form-group">
             <label>Are you currently enrolled in a college/univeristy?*</label>
@@ -44,30 +44,30 @@
           <div style="display:none" id="yesQuestions">
             <div class="form-group">
               <label>What school do you attend?*</label>
-              <input class="text-box" type="text" name="college" required>
+              <input class="text-box" type="text" ng-model="college" required>
             </div>
             <div class="form-group">
               <label>What year are you expected to graduate?*</label>
-              <input class="text-box" type="text" name="gradYear" required>
+              <input class="text-box" type="text" ng-model="gradYear" required>
             </div>
             <div class="form-group">
               <label>What's your major (intended or declared)?*</label>
-              <input class="text-box" type="text" name="major" required>
+              <input class="text-box" type="text" ng-model="major" required>
             </div>
           </div>
           <div style="display:none" id="noQuestions">
             <div class="form-group">
               <label>That's fine! Just explain to us what your situation is below (Graduated college already? Still in high school? Elementary school student trying to get a head start at life?)*</label>
-              <input class="text-box" type="text" name="nonGrad" required>
+              <input class="text-box" type="text" ng-model="nonGrad" required>
             </div>
           </div>
             <div class="form-group">
               <label>Tell us a little about your programming experience!  Have you never written a line of code before, or have you been programming for multiple years? Remember, we're looking to bring in people from both sides of the spectrum, so don't hesitate to be honest!*</label>
-              <textarea class="text-area" name="progExp" required></textarea>
+              <textarea class="text-area" ng-model="progExp" required></textarea>
             </div>
             <div class="form-group">
               <label>Tell us something interesting about you!*</label>
-              <textarea class="text-area" name="fact" placeholder="I'm Kumaran and I play competitive super smash bros melee"></textarea>
+              <textarea class="text-area" ng-model="fact" placeholder="I'm Kumaran and I play competitive super smash bros melee"></textarea>
             </div>
             <input class="submit" type="submit" value="Submit">
         </form>
@@ -76,7 +76,7 @@
    <!-- <header>
       <div class="header-group">
         <label>Email address</label>
-        <input type="email" class="header-control" id="exampleInputEmail1" placeholder="Enter email" name="vm.user.email">
+        <input type="email" class="header-control" id="exampleInputEmail1" placeholder="Enter email" ng-model="vm.user.email">
       </div>
       </header> -->
 </html>
