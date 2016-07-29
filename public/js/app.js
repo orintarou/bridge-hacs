@@ -20,8 +20,14 @@ function validateEmail(email) {
 app.controller("BridgeController", function ($scope) {
   
 	$scope.addUser = function(firstName, lastName, email, birthday, location,
-	 college="", gradYear="", major="",
-	 nonGrad="", progExp, fact=""){
+	 college, gradYear, major,
+	 nonGrad, progExp, fact){
+	 	if(!college || !gradYear || !major || !nonGrad){
+	 		college = "";
+	 		gradYear = "";
+	 		major = "";
+	 		nonGrad = "";
+	 	}
 	 	if(validateEmail(email)){
 	 		databaseLink.push({firstName:firstName, lastName:lastName,
 	 			email:email, birthday:birthday, location:location, college:college,
