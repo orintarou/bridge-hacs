@@ -235,6 +235,10 @@ input {
 .sponsors img:hover{
   background-color: rgba(255,255,255,0.9);
   border-radius: 10px;
+  -webkit-filter: none;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  border-radius: 10px;
 }
 
 .sponsor1 {
@@ -250,7 +254,7 @@ input {
   -webkit-filter: none;
   -webkit-transition: 0.3s;
   transition: 0.3s;
-  border-radius: 10px;
+ /* border-radius: 10px;*/
 }
 
 .sponsor2 {
