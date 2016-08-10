@@ -6,16 +6,6 @@ function validateEmail(email) {
   return re.test(email);
 }
 
-// function show(answer){
-// 	alert("yo");
-// 	document.getElementById(answer + 'Questions').style.display = "block";
-// 	if (answer == "yes") {
-// 		document.getElementById('noQuestions').style.display = "none";
-// 	} else if (answer == "no") {
-// 		document.getElementById('yesQuestions').style.display = "none";
-// 	}
-// }
-
 
 app.controller("BridgeController", function ($scope) {
   
