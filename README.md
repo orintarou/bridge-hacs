@@ -12,4 +12,4 @@ To run locally:
 - Navigate to BridgehaCS directory on terminal.
 - Install development dependencies with `npm install`
 - Start server with `npm start`
-- Site should be visible on localhost:5000
+- localhost:5000
