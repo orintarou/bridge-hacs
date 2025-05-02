@@ -13,8 +13,8 @@
 @keyframes fadeFromRight {
   from {
     opacity: 0;
-    -webkit-transform: translate3d(100%, 0, 0);
-    transform: translate3d(100%, 0, 0);
+    -webkit-transform: translate3d(40%, 0, 0);
+    transform: translate3d(40%, 0, 0);
   }
   to {
     opacity: 1;
@@ -106,7 +106,7 @@ input {
 
 .title-container {
     position: relative;
-    padding-top: 220px;
+    padding-top: 150px;
     width: 100%;
     text-align: center;
     -webkit-animation-duration: 2s;
@@ -115,12 +115,19 @@ input {
     animation-fill-mode: both;
     -webkit-animation-name: fadeFromRight;
     animation-name: fadeFromRight;
+
 }
 
 .title-container h1 {
     font-size: 64px;
     text-align: center;
     margin: 10px 0px 10px 0px !important;
+}
+
+@media (max-width: 560px) {
+  .title-container h1 {
+    font-size: 14vw !important; 
+  }
 }
 
 .title-container h1 {
@@ -130,7 +137,6 @@ input {
     font-size: 6em;
     padding-left: 10px;
     padding-right: 10px;
-    /*this took a long time to finalize*/
     color:tomato;
 }
 
@@ -190,7 +196,7 @@ input {
   text-align: center;
   margin-left: 10%;
   margin-right: 10%;
-  margin-top: 20%;
+  margin-top: 5%;
     
 }
 
@@ -274,15 +280,20 @@ input {
 
 .softwarehardware{
     display: block;
-    background-image: url('../images/softwarehardware2.png');
+    background-image: url('../images/softwarehardware.png');
     background-position: 50% 50%;
     margin-left: auto;
     margin-right: auto;
     padding-right: 20px;
-    background-size: contain;
-    width: 200px;
-    height: 150px;
+    background-size: cover;
+    width: 100px;
+    height: 70px;
 }
+
+.software-hardware-caption{
+  font-size: 8px;
+  color: honeydew;
+  margin-top: 0px;}
 
 /*SLIDE 3 - Participate*/
 
