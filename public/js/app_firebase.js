@@ -6,7 +6,6 @@ function validateEmail(email) {
   return re.test(email);
 }
 
-
 app.controller("BridgeController", function ($scope) {
   
 	$scope.addUser = function(firstName, lastName, email, birthday, location,
