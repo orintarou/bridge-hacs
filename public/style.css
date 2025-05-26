@@ -140,6 +140,10 @@ input {
     color:tomato;
 }
 
+.title-container h3{
+  margin-top: 35vh;
+}
+
 #front-page h3 {
     font-size: .8em;
     font-weight: 200;
@@ -196,13 +200,12 @@ input {
   text-align: center;
   margin-left: 10%;
   margin-right: 10%;
-    
 }
 
 #about h2 {
-  font-size: 1.2em;
+  font-size: 1.4em;
   text-align: center;
-  color: tomato;
+  color: white;
 }
 
 #about p {
