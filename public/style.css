@@ -206,6 +206,7 @@ input {
   font-size: 1.4em;
   text-align: center;
   color: honeydew;
+  opacity: 0.3;
 }
 
 #about p {
