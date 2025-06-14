@@ -22,11 +22,15 @@
     "npm": ">= 1.0.0"
   },
   "dependencies": {
+    "@fontsource/roboto": "^5.2.6",
     "express": "~3.4.4",
     "mongodb": "^6.16.0"
   },
   "devDependencies": {
-    "@angular/cli": "^17.3.17"
+    "@angular/cli": "^17.3.17",
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.0",
+    "@mui/material": "^7.1.1"
   },
   "bundleDependencies": [],
   "private": true,
