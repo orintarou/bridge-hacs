@@ -140,7 +140,7 @@ input {
 }
 
 #front-page h3 {
-    font-size: .8em;
+    font-size: calc(.3vw + 7px);
     font-weight: 200;
     text-align: center;
     webkit-animation-delay: 2s; /* Chrome, Safari, Opera */
@@ -205,16 +205,14 @@ input {
 }
 
 #about p {
-  font-size: calc(.3vw + 8px);
+  font-size: calc(.3vw + 7px);
   color:white;
   margin-left: 10%;
   margin-right: 10%;
-  justify-content: center;
 }
 
 #about .about-text{
   color:white;
-  text-align: left;
   font-family: 'Open Sans', sans-serif;
   line-height: 32px;
   opacity: .9;
