@@ -124,11 +124,6 @@ input {
     margin: 10px 0px 10px 0px !important;
 }
 
-@media (max-width: 560px) {
-  .title-container h1 {
-    font-size: 14vw !important; 
-  }
-}
 
 .title-container h1 {
     margin: 2px;
@@ -200,7 +195,7 @@ input {
   text-align: center;
   margin-left: 10%;
   margin-right: 10%;
-  margin-top: 10%;
+  margin-top: 5%;
 }
 
 #about h2 {
@@ -210,10 +205,11 @@ input {
 }
 
 #about p {
-  font-size: .6em;
+  font-size: calc(.3vw + 8px);
   color:white;
   margin-left: 10%;
   margin-right: 10%;
+  justify-content: center;
 }
 
 #about .about-text{
