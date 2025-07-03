@@ -204,7 +204,7 @@ input {
 }
 
 #about p {
-  font-size: calc(.78vw + 6.5px);
+  font-size: calc(.65vw + 6.5px);
   color:white;
   margin-left: 10%;
   margin-right: 10%;
